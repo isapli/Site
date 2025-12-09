@@ -74,7 +74,7 @@ export function HomePage({ onNavigate }: HomePageProps = {}) {
               </div>
               <h3 className="mb-4 text-[#034460]">Ensino Afetivo</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Metodologia adaptável ao seu ritmo, tornando o inglês acessível e motivador.
+                Metodologia adaptável ao seu ritmo, tornando o idioma acessível e motivador.
               </p>
             </div>
             <div className="text-center p-8 rounded-lg hover:bg-white transition-all duration-300">
