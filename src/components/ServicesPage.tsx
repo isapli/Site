@@ -12,6 +12,7 @@ export function ServicesPage() {
         'Flexibilidade de horários',
       ],
       icon: User,
+      whatsappMessage: 'Olá! Gostaria de saber mais sobre as Aulas Particulares. Pode me ajudar?',
     },
     {
       title: 'Aulas em Grupo',
@@ -22,6 +23,7 @@ export function ServicesPage() {
         'Prática conversacional intensiva',
       ],
       icon: Users,
+      whatsappMessage: 'Olá! Gostaria de saber mais sobre as Aulas em Grupo. Pode me ajudar?',
     },
     {
       title: 'Preparatório para Exames',
@@ -32,6 +34,7 @@ export function ServicesPage() {
         'Estratégias de alta performance',
       ],
       icon: Award,
+      whatsappMessage: 'Olá! Gostaria de saber mais sobre o Preparatório para Exames. Pode me ajudar?',
     },
     {
       title: 'Inglês para Viagens',
@@ -42,8 +45,15 @@ export function ServicesPage() {
         'Foco em fluência imediata',
       ],
       icon: Plane,
+      whatsappMessage: 'Olá! Gostaria de saber mais sobre Inglês para Viagens. Pode me ajudar?',
     },
   ];
+
+  const handleWhatsAppClick = (message: string) => {
+    const phoneNumber = '5512981075584';
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -82,7 +92,7 @@ export function ServicesPage() {
                       </li>
                     ))}
                   </ul>
-                  <button className="text-[#034460] group-hover:text-[#F8BF0F] transition-colors text-sm tracking-wide flex items-center gap-2">
+                  <button className="text-[#034460] group-hover:text-[#F8BF0F] transition-colors text-sm tracking-wide flex items-center gap-2" onClick={() => handleWhatsAppClick(service.whatsappMessage)}>
                     Saber mais 
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </button>
