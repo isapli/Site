@@ -1,7 +1,6 @@
 
-  # Minerva (Versão para Isa)
+  # Minerva
 
-  This is a code bundle for Minerva (Versão para Isa). The original project is available at https://www.figma.com/design/3IT5mpsHn1ofEfhYM0jS3u/Minerva--Vers%C3%A3o-para-Isa-.
 
   ## Running the code
 
